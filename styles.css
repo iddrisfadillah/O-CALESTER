@@ -134,6 +134,11 @@
     font-size: 1rem;
     margin-top: 10px;
   }
+  .service-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
   
   /* Images */
   .service-img {
@@ -283,4 +288,77 @@
   .hamburger {
     display: flex;
   }
+
+}
+/* ================= IMAGE FIX ================= */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Service Hero Image */
+.service-hero-img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+/* Service Page Image */
+.service-image-box img {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Service Cards (Homepage) */
+.service-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.service-hero-overlay {
+  background: rgba(0,0,0,0.5);
+}
+
+/* Service Content */
+.service-content {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* FIX THE LIST */
+.service-content ul {
+  list-style: none;        
+  padding: 0;
+  margin: 20px auto;
+  max-width: 400px;       
+  text-align: left;       
+}
+
+.service-content li {
+  margin: 10px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+/* CUSTOM BULLETS (clean look) */
+.service-content li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #007BFF; /* your theme color */
+  font-weight: bold;
+}
+
+.service-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.service-content p {
+  max-width: 600px;
+  margin: 0 auto 20px;
 }
